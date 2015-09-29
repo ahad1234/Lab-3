@@ -1,0 +1,77 @@
+@-webkit-keyframes example {
+    from { background-position: 0% 0% ;}
+    to {background-position: -200% 0%;}
+}
+
+h1 {
+
+  text-align: center;
+  font-family: helvetica;
+  
+
+}
+
+h2{
+	text-align: center;
+	font-family: helvetica
+
+}
+
+
+
+div.background{
+	width: 80%;
+	height: 60%;
+	position: absolute;
+	background-image: url("background.jpg");	
+	background-position: center;
+	background-repeat: repeat-x;
+	transform : x ;
+	animation : example 10s linear infinite ;
+	
+}
+
+
+#iconUp{
+	position: relative;
+	top : 4px;
+	left: 40px;
+	width:14%;
+	height: 40%;
+	
+	background-image: url("icon.png");
+}
+
+#iconDown{
+	position: relative;
+	top : 200px;
+	left: 40px;
+	width:14%;
+	height: 40%;
+	
+	background-image: url("icon.png");
+}
+
+div.buttons{
+	position: absolute;
+	top : 100%;
+	left : 53%;
+
+}
+
+
+#iconUp {
+	display:none;
+}
+
+#iconDown {
+	display:none;
+}
+
+#iconUp:target {
+	display:block;
+}
+
+#iconDown:target {
+	display:block;
+}
